@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+
+<tiles-definitions>  
+ 
+   <!-- Base Definition -->
+   <definition name="base-definition" 
+       template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/WEB-INF/views/tiles/template/defaultHeader.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/defaultMenu.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/views/tiles/template/defaultFooter.jsp" />  
+   </definition>  
+ 
+  <!-- Home Page -->
+   <definition name="home" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/home.jsp" />  
+   </definition>  
+   
+   <!-- Register Page -->
+   <definition name="register" extends="base-definition">  
+       <put-attribute name="title" value="register" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/register.jsp" />  
+   </definition>  
+
+ <!-- Add Doctor Page -->
+   <definition name="adddoctor" extends="base-definition">  
+       <put-attribute name="title" value="register" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/adddoctor.jsp" />  
+   </definition> 
+   
+    <!-- view Doctor Page -->
+   <definition name="viewdoctor" extends="base-definition">  
+       <put-attribute name="title" value="register" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/viewdoctor.jsp" />  
+   </definition> 
+   
+   
+ 
+</tiles-definitions>
