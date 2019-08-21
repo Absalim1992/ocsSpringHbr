@@ -59,7 +59,7 @@ public class AppController {
 				d.getStreet() + " : " + d.getLocation() + " : " + d.getCity() + " : " + d.getState() + " : " + d.getPincode() + " : " + d.getMobileNo() + " : " +
 				d.getEmailID() + " : " + d.getQualification()+ " : " + d.getSpecialization()+ " : " + d.getYearsOfExperience());
 		Service.adddoctor(d);
-		return "viewdoctor";
+		return "redirect:/viewdoctor";
 		}
 	
 	@RequestMapping(value = {"/viewdoctor" }, method = RequestMethod.GET)
